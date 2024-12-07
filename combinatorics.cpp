@@ -1,9 +1,9 @@
 #define int long long
  
-const int MOD = 1e9 + 7;
+const int mod = 1e9 + 7;
 const int N = 1e6;
  
-int mod(int a, int m = MOD) {
+int mod(int a, int m = mod) {
     return a % m;
 }
 
@@ -20,8 +20,8 @@ template <class T> class Math {
             invfact[i] = modinv(fact[i]);
         }
     }
-    T modinv(T x, T m = MOD) { return expo(x, m - 2, m); }
-    T expo(T base, T exp, T m = MOD) {
+    T modinv(T x, T m = mod) { return expo(x, m - 2, m); }
+    T expo(T base, T exp, T m = mod) {
         T res = 1;
         while (exp) {
             if (exp & 1)
