@@ -1,5 +1,3 @@
-#define int long long
- 
 const int mod = 1e9 + 7;
 const int N = 1e6;
  
