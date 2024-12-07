@@ -49,3 +49,6 @@ template <class T> class Math {
         return ans;
     }
 };
+
+// USAGE
+// Math<int> m(N);
