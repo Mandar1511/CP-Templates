@@ -6,7 +6,16 @@ const int N = 1e6;
 int mod(int a, int m = MOD) {
     return a % m;
 }
- 
+
+int expo(int a, int b, int m){
+   	if(b==0)return 1;
+   	ll tmp = expo(a,b/2);
+   	if(b%2)
+   		return (a%m*tmp%m*tmp%m)%m;
+   	else
+   		return (tmp%m*tmp%m)%m;
+}
+
 template <class T> class Math {
   public:
     vector<T> fact, invfact;
