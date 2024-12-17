@@ -1,7 +1,7 @@
 const int N = 1e6;
 
 int x[N];
-vector<int> sgt(2*N);
+vector<int> sgt(4*N);
 
 void op(int idx){
 	sgt[idx] = sgt[2*idx]+sgt[2*idx+1];
