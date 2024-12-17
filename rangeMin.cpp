@@ -1,5 +1,5 @@
 int x[N];
-vector<int> sgt(2*N);
+vector<int> sgt(4*N);
 
 void op(int idx){
 	sgt[idx] = min(sgt[2*idx],sgt[2*idx+1]);
